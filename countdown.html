@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Tik Tok Tik Tok</title>
+    
+    <link rel="stylesheet" href="countdown.css">
+   
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   
+   
+
+</head>
+
+<body>
+
+
+    <div role="main" class="container">
+        
+  
+
+        <div class="text-center mt-5 pt-5">
+            <h1>COUNTDOWN TIMER</h1>
+            <p class="lead"></p>
+         </div>
+        <div class="input-group mb-3">
+              <input type="text" id="x1" class="form-control" placeholder="Format-  may 04, 2019" aria-label="Recipient's username" aria-describedby="basic-addon2">
+       
+              <div class="input-group-append">
+             <span class="input-group-text" id="basic-addon2">Date</span>
+    
+              </div>
+        </div>
+         <div class="input-group mb-3">
+              <input type="text" id="x2" class="form-control" placeholder="Format- 01:53:30" aria-label="Recipient's username" aria-describedby="basic-addon2">
+       
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2"> Time</span>
+    
+             </div>
+        </div>
+         <button type="button" onClick="start()" class="btn btn-dark">Start</button>
+       
+        <button type="button" id="reset" class="btn btn-dark">Reset</button>
+        
+       <br>
+       <br>
+       
+      <embed name="lostmojo" id="audio" src="clock-ticking-1.mp3" width="0" height="0" loop="infinite" autostart="false">
+        
+        <div >
+        
+        <div id="clockdiv"> 
+              <div> 
+                <span class="days" id="day"></span> 
+                <div class="smalltext">Days</div> 
+        </div> 
+          
+        <div> 
+            <span class="hours" id="hour"></span> 
+            <div class="smalltext">Hours</div> 
+         </div> 
+  
+       <div> 
+            <span class="minutes" id="minute"></span> 
+            <div class="smalltext">Minutes</div> 
+      </div> 
+  
+        <div> 
+            <span class="seconds" id="second"></span> 
+            <div class="smalltext">Seconds</div> 
+             </div> 
+        </div> 
+        <p class="demo"></p></div>
+        
+<!--
+        <div class="input"><input id="datetimepicker" type="text" > </div>
+        <script type="text/javascript">
+        $('#datetimepicker').datetimepicker({
+            format:'Y-m-d H:i',
+            inline:true
+            });
+        </script>
+-->      
+    
+<!--    Tried using date time picker but couldn't implement it , faced some errors of missing libraries
+    
+    Still working on making it better-->
+
+    </div><!-- /.container -->
+    
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="countdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
